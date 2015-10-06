@@ -4,7 +4,7 @@
 #
 Name     : pyquery
 Version  : 1.2.9
-Release  : 10
+Release  : 11
 URL      : https://pypi.python.org/packages/source/p/pyquery/pyquery-1.2.9.zip
 Source0  : https://pypi.python.org/packages/source/p/pyquery/pyquery-1.2.9.zip
 Summary  : A jquery-like library for python
