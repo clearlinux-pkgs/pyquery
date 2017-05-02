@@ -4,7 +4,7 @@
 #
 Name     : pyquery
 Version  : 1.2.17
-Release  : 19
+Release  : 20
 URL      : http://pypi.debian.net/pyquery/pyquery-1.2.17.tar.gz
 Source0  : http://pypi.debian.net/pyquery/pyquery-1.2.17.tar.gz
 Summary  : A jquery-like library for python
