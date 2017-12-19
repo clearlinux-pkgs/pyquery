@@ -4,7 +4,7 @@
 #
 Name     : pyquery
 Version  : 1.3.0
-Release  : 26
+Release  : 27
 URL      : https://pypi.python.org/packages/f6/0e/f01ff19cd0dd74f60431db77dbf4b0b16ee9dff21f96d6595af64afe2bf1/pyquery-1.3.0.tar.gz
 Source0  : https://pypi.python.org/packages/f6/0e/f01ff19cd0dd74f60431db77dbf4b0b16ee9dff21f96d6595af64afe2bf1/pyquery-1.3.0.tar.gz
 Summary  : A jquery-like library for python
