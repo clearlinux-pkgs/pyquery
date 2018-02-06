@@ -1,5 +1,5 @@
 PKG_NAME := pyquery
-URL := https://pypi.python.org/packages/f6/0e/f01ff19cd0dd74f60431db77dbf4b0b16ee9dff21f96d6595af64afe2bf1/pyquery-1.3.0.tar.gz
-
+URL = https://pypi.python.org/packages/e4/46/596311bb390c902b61499ff9fd5a355cdf85c8455737cb0f08c6c2c13e22/pyquery-1.4.0.tar.gz
+ARCHIVES = 
 
 include ../common/Makefile.common
