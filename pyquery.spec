@@ -4,7 +4,7 @@
 #
 Name     : pyquery
 Version  : 1.4.0
-Release  : 30
+Release  : 31
 URL      : https://pypi.python.org/packages/e4/46/596311bb390c902b61499ff9fd5a355cdf85c8455737cb0f08c6c2c13e22/pyquery-1.4.0.tar.gz
 Source0  : https://pypi.python.org/packages/e4/46/596311bb390c902b61499ff9fd5a355cdf85c8455737cb0f08c6c2c13e22/pyquery-1.4.0.tar.gz
 Summary  : A jquery-like library for python
@@ -31,6 +31,7 @@ BuildRequires : python-dev
 BuildRequires : python-mock
 BuildRequires : python3-dev
 BuildRequires : setuptools
+BuildRequires : setuptools-legacypython
 BuildRequires : six
 BuildRequires : waitress
 
@@ -78,7 +79,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1517926140
+export SOURCE_DATE_EPOCH=1519931471
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
@@ -88,7 +89,7 @@ export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 nosetests || :
 %install
-export SOURCE_DATE_EPOCH=1517926140
+export SOURCE_DATE_EPOCH=1519931471
 rm -rf %{buildroot}
 python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
 python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
