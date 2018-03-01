@@ -13,3 +13,4 @@ WSGIProxy2
 PasteDeploy
 beautifulsoup4
 waitress
+setuptools-legacypython
