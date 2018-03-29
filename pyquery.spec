@@ -4,13 +4,12 @@
 #
 Name     : pyquery
 Version  : 1.4.0
-Release  : 31
+Release  : 32
 URL      : https://pypi.python.org/packages/e4/46/596311bb390c902b61499ff9fd5a355cdf85c8455737cb0f08c6c2c13e22/pyquery-1.4.0.tar.gz
 Source0  : https://pypi.python.org/packages/e4/46/596311bb390c902b61499ff9fd5a355cdf85c8455737cb0f08c6c2c13e22/pyquery-1.4.0.tar.gz
 Summary  : A jquery-like library for python
 Group    : Development/Tools
 License  : BSD-3-Clause
-Requires: pyquery-legacypython
 Requires: pyquery-python3
 Requires: pyquery-python
 Requires: cssselect
@@ -44,15 +43,6 @@ from urllib import urlopen
 except ImportError:
 from urllib.request import urlopen
 
-%package legacypython
-Summary: legacypython components for the pyquery package.
-Group: Default
-Requires: python-core
-
-%description legacypython
-legacypython components for the pyquery package.
-
-
 %package python
 Summary: python components for the pyquery package.
 Group: Default
@@ -79,8 +69,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1519931471
-python2 setup.py build -b py2
+export SOURCE_DATE_EPOCH=1522282961
 python3 setup.py build -b py3
 
 %check
@@ -89,20 +78,14 @@ export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 nosetests || :
 %install
-export SOURCE_DATE_EPOCH=1519931471
 rm -rf %{buildroot}
-python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
-python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
+python3 -tt setup.py build -b py3 install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
 echo ----[ mark ]----
 
 %files
 %defattr(-,root,root,-)
-
-%files legacypython
-%defattr(-,root,root,-)
-/usr/lib/python2*/*
 
 %files python
 %defattr(-,root,root,-)
