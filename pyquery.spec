@@ -4,7 +4,7 @@
 #
 Name     : pyquery
 Version  : 1.4.0
-Release  : 35
+Release  : 36
 URL      : https://pypi.python.org/packages/e4/46/596311bb390c902b61499ff9fd5a355cdf85c8455737cb0f08c6c2c13e22/pyquery-1.4.0.tar.gz
 Source0  : https://pypi.python.org/packages/e4/46/596311bb390c902b61499ff9fd5a355cdf85c8455737cb0f08c6c2c13e22/pyquery-1.4.0.tar.gz
 Summary  : A jquery-like library for python
