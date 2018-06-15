@@ -26,7 +26,7 @@ BuildRequires : nose
 BuildRequires : pbr
 BuildRequires : pip
 BuildRequires : pyquery
-BuildRequires : python-dev
+
 BuildRequires : python-mock
 BuildRequires : python3-dev
 BuildRequires : setuptools
