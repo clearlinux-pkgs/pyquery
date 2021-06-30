@@ -1,5 +1,5 @@
 PKG_NAME := pyquery
-URL = https://files.pythonhosted.org/packages/6b/94/4663206f709ac32446e995227cc5be34d5e2aa74ba8f92b8083c2740d3d7/pyquery-1.4.1.tar.gz
+URL = https://files.pythonhosted.org/packages/e9/27/6db65c90587856a229539df703679fa81d17089b74432abfd74a0dd2ca13/pyquery-1.4.3.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
